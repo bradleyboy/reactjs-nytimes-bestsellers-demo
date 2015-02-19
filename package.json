@@ -1,0 +1,25 @@
+{
+  "name": "nytimes-bestseller-reactjs-demo",
+  "version": "1.0.0",
+  "description": "Using the NYTimes API and ReactJS for fun.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot"
+  },
+  "author": "Brad Daily <brad@bradleyboy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "keymirror": "^0.1.1",
+    "moment": "^2.9.0",
+    "object-assign": "^2.0.0",
+    "react": "^0.13.0-beta.1",
+    "reflux": "^0.2.5",
+    "xhr": "^2.0.1",
+    "6to5-core": "^3.6.5",
+    "6to5-loader": "^3.0.0",
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
