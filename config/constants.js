@@ -3,6 +3,7 @@ import keyMirror from 'keymirror';
 export const ActionTypes = keyMirror({
 	FETCH_LIST_NAMES: null,
 	FETCH_LIST_BOOKS: null,
+	SELECT_LIST: null,
 });
 
 export const PayloadSources = keyMirror({

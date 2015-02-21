@@ -1,14 +1,16 @@
 import StoreFactory from './Factory';
 import { ActionTypes } from '../config/constants';
 
+let _books = [];
+
 const BooksStore = StoreFactory({
-	data: {
-		books: [],
+	getAll() {
+		return _books;
 	},
 
 	listeners: {
 		[ActionTypes.FETCH_LIST_BOOKS](action) {
-			this.data.books = action.books;
+			_books = action.books;
 			this.emitChange();
 		}
 	}

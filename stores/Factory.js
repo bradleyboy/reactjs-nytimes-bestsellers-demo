@@ -16,10 +16,6 @@ export default function (obj) {
 
 		removeChangeListener(callback) {
 			this.removeListener(CHANGE_EVENT, callback);
-		},
-
-		get() {
-			return this.data;
 		}
 	}, obj);
 

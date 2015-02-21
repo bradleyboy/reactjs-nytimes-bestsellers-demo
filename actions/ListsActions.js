@@ -10,5 +10,12 @@ export default {
 				names: data.results,
 			});
 		});
-	}
+	},
+
+	select(key) {
+		Dispatcher.handleViewAction({
+			type: ActionTypes.SELECT_LIST,
+			key,
+		})
+	},
 }
