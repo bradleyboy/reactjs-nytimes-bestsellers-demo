@@ -9,17 +9,25 @@
   "author": "Brad Daily <brad@bradleyboy.com>",
   "license": "MIT",
   "dependencies": {
+    "6to5-core": "^3.6.5",
+    "6to5-loader": "^3.0.0",
     "flux": "^2.0.1",
+    "jest": "^0.1.37",
+    "jsx-loader": "^0.12.2",
     "keymirror": "^0.1.1",
     "moment": "^2.9.0",
     "object-assign": "^2.0.0",
     "react": "^0.13.0-beta.1",
+    "react-tools": "^0.12.2",
     "reflux": "^0.2.5",
-    "xhr": "^2.0.1",
-    "6to5-core": "^3.6.5",
-    "6to5-loader": "^3.0.0",
-    "jsx-loader": "^0.12.2",
     "webpack": "^1.5.3",
-    "webpack-dev-server": "^1.7.0"
+    "webpack-dev-server": "^1.7.0",
+    "xhr": "^2.0.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "./preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ]
   }
 }
