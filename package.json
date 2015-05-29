@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "dotenv": "^1.1.0"
-  }
+  },
   "jest": {
     "scriptPreprocessor": "./preprocessor.js",
     "unmockedModulePathPatterns": [
